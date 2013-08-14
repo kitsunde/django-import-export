@@ -9,7 +9,7 @@ except ImportError:
         import xlrd # NOQA
         XLS_IMPORT = True
     except ImportError:
-        xls_warning = "Installed `tablib` library does not include"
+        xls_warning = "Installed `tablib` library does not include" \
         "import support for 'xls' format and xlrd module is not found."
         warnings.warn(xls_warning, ImportWarning)
         XLS_IMPORT = False
